@@ -9,6 +9,7 @@
     --our-team-bgrnd-color: #F5F4FA;
     --social-links-color: #AFB1B8;
     --hero-bgrnd-color: rgba(47, 48, 58, 0.4);
+    --portfolio-cards-border: 1px solid #EEEEEE;
 }
 
 body {
@@ -122,6 +123,7 @@ text-decoration: none;
 
 .nav-list-link {
     display: block;
+    font-weight: 500;
     font-size: 14px;
     line-height: 1.143;
     letter-spacing: 0.02em;
@@ -437,7 +439,7 @@ text-decoration: none;
 }
 
 .our-team-icon {
-    widows: 20px;
+    width: 20px;
     height: 20px;
     fill: currentColor;
 }
@@ -497,6 +499,7 @@ text-decoration: none;
     color: var(--title-color);
     margin-bottom: 50px;
 }
+
 /* ===== END REGULAR CLIENTS ===== */
 
 /* ===== FOOTER ===== */
@@ -511,10 +514,7 @@ text-decoration: none;
 .address-container {
     display: flex;
     flex-direction: column;
-    padding-top: 60px;
-    padding-bottom: 60px;
     margin-right: 70px;
-    
 }
 
 .logo-margin-footer {
@@ -540,26 +540,23 @@ text-decoration: none;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    /* or 171% */
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
 
 .socials-footer-container {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    padding-top: 72px;
-    padding-bottom: 100px;
 }
 
 .socials-footer-title {
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.143px;
+    line-height: 1.143;
     text-transform: uppercase;
     color: var(--header-hero-btn-color);
-    margin-bottom: 20px;
+    padding-top: 12px;
+    padding-bottom: 20px;
 }
 
 .footer-socials-list {
@@ -572,6 +569,11 @@ text-decoration: none;
     background: rgba(255, 255, 255, 0.1);
 }
 
+.contact-information-link:hover,
+.contact-information-link:focus {
+    color:var(--accent-color)
+}
+
 /* ===== END FOOTER ===== */
 
 
@@ -582,14 +584,10 @@ text-decoration: none;
     align-items: center;
 }
 
-.filters-container {
-    /* width: 611px; */
-    margin-bottom: 50px;
-}
-
 .filter-list {
     display: flex;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .filter-list-item:not(:last-child) {
@@ -616,7 +614,6 @@ text-decoration: none;
 .filter-list-button:focus {
     color: var(--header-hero-btn-color);
     background: var(--accent-color);
-    /* shadow-middle */
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px
 }
 
@@ -629,6 +626,7 @@ text-decoration: none;
     width: calc((100% - 60px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
+    border: var(--portfolio-cards-border);
 }
 
 .projects-list-item:nth-child(3n) {
