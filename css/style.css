@@ -461,10 +461,7 @@ text-decoration: none;
 
 .regular-clients-list {
     display: flex;
-}
-
-.regular-clients-item {
-    width: calc((100% - 150px)/6);
+    justify-content: center;
 }
 
 .regular-clients-item:not(:last-child) {
