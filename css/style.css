@@ -622,7 +622,6 @@ text-decoration: none;
     width: calc((100% - 60px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
-    border: var(--portfolio-cards-border);
 }
 
 .projects-list-item:nth-child(3n) {
@@ -660,6 +659,7 @@ text-decoration: none;
 
 .projects-list-link {
     display: block;
+    border: var(--portfolio-cards-border);
 }
 
 .projects-list-link:hover,
